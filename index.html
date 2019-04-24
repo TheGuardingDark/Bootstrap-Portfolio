@@ -3,59 +3,100 @@
     <head>
         <meta charset="UTF-8">
         <title>Liv Heller Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
 <style>
 
-/* .navbar-brand { */
+
+
+
+.navbar-brand {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25pt;
     background: #bd5734;
     color: #454140;
     width: 200px;
     text-align: center;
-    padding: 5px 0;
+    margin-left: 100px;
 
 }
+
+ul {
+    margin-right: 15px;
     
+}
+
+.nav-link {
+    font-size: 15pt;
+    color: #777 !important;
+    border-right: 1px solid #bd5734;
+}
+    
+.card {
+    background: #a79e84;
+    margin: 15px auto;
+    padding: 5px 10px;
+}
+
+body {
+    background: url("dark-honeycomb.png");
+}
+
+ .container-fluid {
+     padding: 0;
+     
+ }
+
+.card-title {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #7a3b2e;
+    padding: 18px 24px;
+    border-bottom: 3px solid #bd5734;
+}
+
 
 
 </style>
         <body>
             
 
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <span class="navbar-brand mb-0 h1">Liv Heller</span>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                            </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav navbar-right">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                
+            <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #454140">
+                <a class="navbar-brand" href="#">Liv Heller</a>
+                        
+                         
+                <div class="collapse navbar-collapse justify-content-end" id="nav-content">   
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>                    
+                </div>            
+            </nav>
+        
                     
                 
                 
                 
-
+            <div class="container-fluid flex-grow-1">
+                <div class="row">
+                    <div class="col align-self-center">
             <div class="card mb-3" style="max-width: 960px;">
                     <div class="row no-gutters">
                         <div class="col-md">
                             <h5 class="card-title">About Me</h5>
                         </div>
-                        <div class="row no-gutters">
-                      <div class="col-md-5">
+                    <div class="row no-gutters">
+                      <div class="col-md-5 py-4">
                         <img src="assets/images/headshot.jpg" class="card-img" alt="Liv Heller Headshot">
                       </div>
                       <div class="col-md-7">
@@ -69,12 +110,18 @@
                       </div>
                     </div>
                   </div>
+                  </div>
+                  </div>
+                  </div>
 
 
-                <footer class="footer mt-auto py-3">
-                <div class="container">
-                    <span class="footer">Copyright ©</span>
-                </div>
+
+
+                  <footer class="navbar-expand-sm">
+                      <div class="py-2 bg-4 bg-dark text-white text-center">
+                          <div id="foot">Copyright ©</div>
+                      </div>
                 </footer>
+                
         </body>
 </html>
