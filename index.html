@@ -10,28 +10,36 @@
 <style>
 
 
+/* .navbar { */
+    padding: 0 5px;
+    border-bottom: 2px solid #bd5734;
+}
 
-
-.navbar-brand {
+/* .navbar-brand { */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25pt;
     background: #bd5734;
     color: #454140;
     width: 200px;
     text-align: center;
-    margin-left: 100px;
+    margin-left: 50px;
 
 }
 
-ul {
+/* ul { */
     margin-right: 15px;
     
 }
 
-.nav-link {
+/* li { */
     font-size: 15pt;
     color: #777 !important;
     border-right: 1px solid #bd5734;
+}
+
+body {
+    background: url("dark-honeycomb.png");
+
 }
     
 .card {
@@ -40,14 +48,6 @@ ul {
     padding: 5px 10px;
 }
 
-body {
-    background: url("dark-honeycomb.png");
-}
-
- .container-fluid {
-     padding: 0;
-     
- }
 
 .card-title {
     font-size: 20pt;
@@ -57,71 +57,66 @@ body {
     border-bottom: 3px solid #bd5734;
 }
 
+.card-img {
+    border: 2px solid #bd5734;
+}
+
+footer {
+    border-top: 2px solid #bd5734;
+}
 
 
 </style>
         <body>
             
 
-                
-            <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #454140">
-                <a class="navbar-brand" href="#">Liv Heller</a>
-                        
-                         
-                <div class="collapse navbar-collapse justify-content-end" id="nav-content">   
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>                    
-                </div>            
-            </nav>
-        
-                    
-                
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Liv Heller</a>
+                  </div>
+                  <ul class="nav navbar-nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+             
                 
                 
             <div class="container-fluid flex-grow-1">
                 <div class="row">
                     <div class="col align-self-center">
-            <div class="card mb-3" style="max-width: 960px;">
-                    <div class="row no-gutters">
-                        <div class="col-md">
-                            <h5 class="card-title">About Me</h5>
+                        <div class="card mb-3" style="max-width: 960px;">
+                            <div class="row no-gutters">
+                                <div class="col-md">
+                                    <h5 class="card-title">About Me</h5>
+                                </div>
+                            <div class="row no-gutters">
+                                <div class="col-md-5 py-4">
+                                    <img src="assets/images/headshot.jpg" class="card-img" alt="Liv Heller Headshot">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <p class="card-text">I do a lot of things, but mostly I make stuff. Currently, I make stuff by repeatedly bashing my head against a keyboard, but in the past I've made prosthetic pieces for film, secret passageways for escape rooms, a Secret Society hideaway for weekly soirées, a Winter Wonderland in the heart of LA, Zombies (I mean A LOT of Zombies), and so much more.</p>
+                                        <p>My ultimate passion is story-telling and I'm always looking for new mediums in which to explore the art of narrative. This journey has taken me from film and television, to immersive entertainment and haunts, to videogames and experimental ARGs.</p>
+                                        <p>After acquiring a BFA in Special Effects from The Academy of Art University in San Francisco, I moved to LA where I stayed for the next decade.</p>
+                                        <p>Eventually, I found myself back in my hometown of Colorado Springs, where I currently reside.</p>
+                                        <p>When I'm not covering people with fake blood, and gluing my fingers together, I can be found at home with my dog, probably sleeping.</p>                          
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
                         </div>
-                    <div class="row no-gutters">
-                      <div class="col-md-5 py-4">
-                        <img src="assets/images/headshot.jpg" class="card-img" alt="Liv Heller Headshot">
-                      </div>
-                      <div class="col-md-7">
-                        <div class="card-body">
-                          <p class="card-text">I do a lot of things, but mostly I make stuff. Currently, I make stuff by repeatedly bashing my head against a keyboard, but in the past I've made prosthetic pieces for film, secret passageways for escape rooms, a Secret Society hideaway for weekly soirées, a Winter Wonderland in the heart of LA, Zombies (I mean A LOT of Zombies), and so much more.</p>
-                          <p>My ultimate passion is story-telling and I'm always looking for new mediums in which to explore the art of narrative. This journey has taken me from film and television, to immersive entertainment and haunts, to videogames and experimental ARGs.</p>
-                          <p>After acquiring a BFA in Special Effects from The Academy of Art University in San Francisco, I moved to LA where I stayed for the next decade.</p>
-                          <p>Eventually, I found myself back in my hometown of Colorado Springs, where I currently reside.</p>
-                          <p>When I'm not covering people with fake blood, and gluing my fingers together, I can be found at home with my dog, probably sleeping.</p>                          
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                  </div>
-                  </div>
-                  </div>
+                </div>
+            </div>
 
 
 
 
-                  <footer class="navbar-expand-sm">
-                      <div class="py-2 bg-4 bg-dark text-white text-center">
-                          <div id="foot">Copyright ©</div>
-                      </div>
-                </footer>
-                
-        </body>
+            <footer class="text-center py-2 bg-4 bg-dark text-white">Copyright ©</footer>
+             
+    </body>
 </html>
