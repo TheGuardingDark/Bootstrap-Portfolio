@@ -1,122 +1,70 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <title>Liv Heller Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </head>
-<style>
-
-
-/* .navbar { */
-    padding: 0 5px;
-    border-bottom: 2px solid #bd5734;
-}
-
-/* .navbar-brand { */
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25pt;
-    background: #bd5734;
-    color: #454140;
-    width: 200px;
-    text-align: center;
-    margin-left: 50px;
-
-}
-
-/* ul { */
-    margin-right: 15px;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Liv Heller</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
     
-}
+</head>
 
-/* li { */
-    font-size: 15pt;
-    color: #777 !important;
-    border-right: 1px solid #bd5734;
-}
-
-body {
-    background: url("dark-honeycomb.png");
-
-}
-    
-.card {
-    background: #a79e84;
-    margin: 15px auto;
-    padding: 5px 10px;
-}
-
-
-.card-title {
-    font-size: 20pt;
-    font-weight: bold;
-    color: #7a3b2e;
-    padding: 18px 24px;
-    border-bottom: 3px solid #bd5734;
-}
-
-.card-img {
-    border: 2px solid #bd5734;
-}
-
-footer {
-    border-top: 2px solid #bd5734;
-}
-
-
-</style>
-        <body>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="#" class="navbar-brand">Liv Heller</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="navbar-collapse collapse justify-content-stretch" id="navbar7">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
             
 
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                  <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Liv Heller</a>
-                  </div>
-                  <ul class="nav navbar-nav">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
-                </div>
-              </nav>
-             
-                
-                
-            <div class="container-fluid flex-grow-1">
-                <div class="row">
-                    <div class="col align-self-center">
-                        <div class="card mb-3" style="max-width: 960px;">
-                            <div class="row no-gutters">
-                                <div class="col-md">
-                                    <h5 class="card-title">About Me</h5>
-                                </div>
-                            <div class="row no-gutters">
-                                <div class="col-md-5 py-4">
-                                    <img src="assets/images/headshot.jpg" class="card-img" alt="Liv Heller Headshot">
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="card-body">
-                                        <p class="card-text">I do a lot of things, but mostly I make stuff. Currently, I make stuff by repeatedly bashing my head against a keyboard, but in the past I've made prosthetic pieces for film, secret passageways for escape rooms, a Secret Society hideaway for weekly soirées, a Winter Wonderland in the heart of LA, Zombies (I mean A LOT of Zombies), and so much more.</p>
-                                        <p>My ultimate passion is story-telling and I'm always looking for new mediums in which to explore the art of narrative. This journey has taken me from film and television, to immersive entertainment and haunts, to videogames and experimental ARGs.</p>
-                                        <p>After acquiring a BFA in Special Effects from The Academy of Art University in San Francisco, I moved to LA where I stayed for the next decade.</p>
-                                        <p>Eventually, I found myself back in my hometown of Colorado Springs, where I currently reside.</p>
-                                        <p>When I'm not covering people with fake blood, and gluing my fingers together, I can be found at home with my dog, probably sleeping.</p>                          
-                                    </div>
+        <div class="container-fluid flex-grow-1">
+            <div class="row">
+                <div class="col align-self-center">
+                    <div class="card mb-3" style="max-width: 960px;">
+                        <div class="row no-gutters">
+                            <div class="col-md">
+                                <h5 class="card-title">About Me</h5>
+                            </div>
+                        <div class="row no-gutters">
+                            <div class="col-md-5 py-4">
+                                <img src="assets/images/headshot.jpg" class="card-img" alt="Liv Heller Headshot">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <p class="card-text">I do a lot of things, but mostly I make stuff. Currently, I make stuff by repeatedly bashing my head against a keyboard, but in the past I've made prosthetic pieces for film, secret passageways for escape rooms, a Secret Society hideaway for weekly soirées, a Winter Wonderland in the heart of LA, Zombies (I mean A LOT of Zombies), and so much more.</p>
+                                    <p>My ultimate passion is story-telling and I'm always looking for new mediums in which to explore the art of narrative. This journey has taken me from film and television, to immersive entertainment and haunts, to videogames and experimental ARGs.</p>
+                                    <p>After acquiring a BFA in Special Effects from The Academy of Art University in San Francisco, I moved to LA where I stayed for the next decade.</p>
+                                    <p>Eventually, I found myself back in my hometown of Colorado Springs, where I currently reside.</p>
+                                    <p>When I'm not covering people with fake blood, and gluing my fingers together, I can be found at home with my dog, probably sleeping.</p>                          
                                 </div>
                             </div>
-                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
-            <footer class="text-center py-2 bg-4 bg-dark text-white">Copyright ©</footer>
-             
+        </div>
+    
+    
+        <footer class="text-center py-2 bg-4 bg-dark text-white">Copyright ©</footer>
+                 
     </body>
 </html>
