@@ -50,6 +50,8 @@ img {
     border-radius: 4%;
 }
 
+
+
 .btn {
     margin-top: 50%;
     background: #a79e84;
@@ -68,6 +70,10 @@ footer {
     border-top: 2px solid #bd5734;
 }
 
-
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 
