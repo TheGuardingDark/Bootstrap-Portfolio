@@ -1,99 +1,46 @@
-* {
-    box-sizing: border-box;
+.navbar {
+    padding: 0 10px;
+    border-bottom: 2px solid #7a3b2e;
 }
 
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.banner {
-    background: rgb(65, 63, 63);
-    border-bottom: 3px solid #bd5734;
-    position: relative;
-    padding: 5px 0;
-}
-
-ul {
-    list-style-type: none;
-    overflow: hidden;
-    padding-bottom: 7px;
-    margin-right: 50px;
-}
-
-li  {
-    float: right;
-    border-right: 1px solid #bd5734;
-}
-
-li:first-child {
-    border-right: none;  
-}
-
-li a:hover {
-    background-color: #a79e84;
-    color: #454140;
-    border-radius: 4px;
-}
-
-li a {
-    display: block;
-    color: #777777;
-    text-decoration: none;
-    padding: 18px 16px;
-    text-align: center;
-}
-
-    
-h1 {
+.navbar-brand {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25pt;
     background: #bd5734;
-    color: #454140;
+    color: #454140 !important;
     width: 200px;
     text-align: center;
-    padding: 19px 0;
-    position: absolute;
-    left: 45px;
-    top: -1px;
-    
 }
 
-html, body {
-    height: 100%;
+.nav-link {
+    font-size: 15pt;
+    color: #777;
+    padding-right: 10px;    
 }
-
 
 body {
-    background-image: url("../images/dark-honeycomb.png");
+    background: url("../images/dark-honeycomb.png");
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
-.wrapper {
+
+.card {
     background: #a79e84;
-    width: 850px; 
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 85px;
-    margin-bottom: 100px;
-    padding: 10px 10px 50px 10px;
-    flex: 1 0 auto;
     border: 2px solid #bd5734;
-    
+    margin: 25px auto;
+    padding: 5px 10px;
+    border-radius: 4%;
 }
 
 
-h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.card-title {
     font-size: 20pt;
     font-weight: bold;
     color: #7a3b2e;
     padding: 18px 24px;
     border-bottom: 3px solid #bd5734;
-    margin-bottom: 45px;
 }
 
 label {
@@ -115,8 +62,13 @@ input[type=text], textarea {
     resize: vertical;
 }
 
+.btn {
+    display: flex;
+    justify-content: center;
+}
 
-button[type=submit] {
+
+.btn [type=submit] {
     background-color: #bd5734;
     color: #454140;
     text-align: center;
@@ -126,18 +78,18 @@ button[type=submit] {
     padding: 15px 0;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 20px 0 0 325px;
+    margin: 20px;
     width: 150px;
 }
 
-button span {
+.btn span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-button span::after {
+.btn span::after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -146,22 +98,18 @@ button span::after {
     transition: 0.5s;
 }
 
-button:hover span {
+.btn:hover span {
     padding-right: 25px;
 }
 
-button:hover span::after {
+.btn:hover span::after {
     opacity: 1;
     right: 0;
 }
 
-.footer {
-    flex-shrink: 0;
-    background: #bd5734;
-    border-top: 8px solid #7a3b2e; 
-    padding-top: 50px;
-    padding-bottom: 5px;
-    margin-top: auto;
-    text-align: center;
 
+footer {
+    flex-shrink: 0;
+    border-top: 2px solid #bd5734;
 }
+
